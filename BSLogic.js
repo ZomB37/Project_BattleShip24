@@ -17,8 +17,7 @@ var totalGuesses = 0;
 //variable to track whether the ship has been sunk
 var isSunk = false;
 
-//create a stats message - return this to the user at the end of the game, so they can view their stats
-var userStats = "You took " + totalGuesses + " guesses to sink the battleship. Your shooting accuracy was " + (3/totalGuesses);
+//MAIN BODY 
 
 //use a while loop to start the game, and then keep running until the ship has been sunk
 while(isSunk == false){
@@ -56,6 +55,9 @@ while(isSunk == false){
         }
     }
 }
+
+//create a stats message - return this to the user at the end of the game, so they can view their stats
+var userStats = "You took " + totalGuesses + " guesses to sink the battleship. Your shooting accuracy was " + (3/totalGuesses);
 
 //return the above userStats variable to the screen, so the user can view their game stats
 alert(userStats);
