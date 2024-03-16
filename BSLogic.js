@@ -37,6 +37,8 @@ while(isSunk == false){
 
         //test to see if the user input matches locations 1,2, or 3
         if (userGuess == location1 || userGuess == location2 || userGuess == location3){
+            //tell the user they've made a hit
+            alert("Hit!");
             //if the input matches one of the locations, add one to the hit variable
             numOfHits++;
 
@@ -47,6 +49,10 @@ while(isSunk == false){
                 //return the sunk message to the user
                 alert("You Sank My Battleship!");
             }
+        }
+        //otherwise, tell the user that they missed
+        else{
+            alert("Miss.");
         }
     }
 }
