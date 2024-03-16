@@ -1,7 +1,8 @@
 body {
-    background-color: gray;
+    background-color: teal;
 }
 
 h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: auto;
 }
